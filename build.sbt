@@ -17,7 +17,7 @@ val root = Project("resy-booking-bot", file("."))
       "com.github.pureconfig"    %% "pureconfig"      % "0.17.2",
       "org.apache.logging.log4j" %% "log4j-api-scala" % "12.0",
       "org.apache.logging.log4j"  % "log4j-core"      % "2.19.0" % Runtime,
-      "org.scalatest"            %% "scalatest"       % "3.2.15" % Test,
+      "org.scalatest"            %% "scalatest"       % "3.2.19" % Test,
       "org.mockito"               % "mockito-core"    % "5.1.1"  % Test,
       "org.slf4j"                 % "slf4j-nop"       % "2.0.5"
       // The above removes failed to load class warning
