@@ -19,7 +19,7 @@ jobs:
         with:
           fetch-depth: 0
 
-      - uses: coursier/cache-action@v6.3.3
+      - uses: coursier/cache-action@v6.4.6
       - uses: auto-it/setup-auto@v1
 
       - name: Create Release
