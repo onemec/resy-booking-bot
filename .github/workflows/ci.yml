@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
-      - uses: actions/checkout@v3.0.2
+      - uses: actions/checkout@v3.6.0
       - uses: AvaPL/scalafmt-native-formatter@v0.1.2
 
   tests:
@@ -23,7 +23,7 @@ jobs:
     env:
       SBT_NATIVE_CLIENT: true
     steps:
-      - uses: actions/checkout@v3.0.2
+      - uses: actions/checkout@v3.6.0
       - uses: coursier/cache-action@v6.3.3
 
       - name: Resolve dependencies
