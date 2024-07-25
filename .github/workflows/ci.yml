@@ -14,8 +14,8 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
-      - uses: actions/checkout@v3.0.2
-      - uses: AvaPL/scalafmt-native-formatter@v0.1.2
+      - uses: actions/checkout@v3
+      - uses: AvaPL/scalafmt-native-formatter@v0
 
   tests:
     runs-on: ubuntu-latest
@@ -23,8 +23,8 @@ jobs:
     env:
       SBT_NATIVE_CLIENT: true
     steps:
-      - uses: actions/checkout@v3.0.2
-      - uses: coursier/cache-action@v6.3.3
+      - uses: actions/checkout@v3
+      - uses: coursier/cache-action@v6
 
       - name: Resolve dependencies
         run: sbt update
@@ -43,7 +43,7 @@ jobs:
 
       - name: Publish JUnit Test Report
         if: always()
-        uses: mikepenz/action-junit-report@v3.3.3
+        uses: mikepenz/action-junit-report@v3
         with:
           report_paths: "**/target/test-reports/*.xml"
 
