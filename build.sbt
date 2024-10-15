@@ -18,7 +18,7 @@ val root = Project("resy-booking-bot", file("."))
       "org.apache.logging.log4j" %% "log4j-api-scala" % "13.1.0",
       "org.apache.logging.log4j"  % "log4j-core"      % "2.23.1" % Runtime,
       "org.scalatest"            %% "scalatest"       % "3.2.19" % Test,
-      "org.mockito"               % "mockito-core"    % "5.12.0"  % Test,
+      "org.mockito"               % "mockito-core"    % "5.14.2"  % Test,
       "org.slf4j"                 % "slf4j-nop"       % "2.0.13"
       // The above removes failed to load class warning
     ),
